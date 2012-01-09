@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TestProject::Application.load_tasks
+SampleApp::Application.load_tasks
