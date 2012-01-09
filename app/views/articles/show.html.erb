@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @article.title %>
+</p>
+
+<p>
+  <b>Short description:</b>
+  <%= @article.short_description %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @article.description %>
+</p>
+
+<p>
+  <%= image_tag @article.picture_url %>
+  <br/>
+  <%= @article.picture_url %>
+</p>
+
+<%= link_to 'Back', news_path %>

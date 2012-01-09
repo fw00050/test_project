@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @record.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @record.email %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @record.event %>
+</p>
+
+<p>
+  <b>Date seen:</b>
+  <%= @record.date_seen %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @record.gender %>
+</p>
+
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

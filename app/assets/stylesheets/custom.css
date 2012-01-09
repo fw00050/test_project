@@ -1,29 +1,39 @@
 .container {
-  width: 710px;
+  width: center;
 }
 
-body {
-  background: #cff;
+body 
+{
+      background : black ;
+      background-image : url('background2.jpg'); /*背景圖片網址*/
+      background-repeat : no-repeat; /*背景圖片重複排*/
+      background-position : center;
+      background-attachment: fixed; /*背景圖片固定*/
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: black;
 }
 
 section {
   margin-top: 1em;
-  font-size: 120%;
+  font-size: 150%;
   padding: 20px;
   background: #fff;
 }
 
 section h1 {
   font-size: 200%;
+  color: #09c;
+}
+
+section h2 {
+  font-size: 150%;
 }
 
 /* Links */
@@ -42,45 +52,33 @@ a:visited {
   color: #069;
 }
 
-/* Navigation */
 
-nav {
-  float: right;
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
 }
 
-nav {
-  background-color: white;
-  padding: 0 0.7em;
-  white-space: nowrap;
+
+/* footer */
+
+footer {
+;
+  margin-top: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
+footer nav {
+  float: none;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0.2em 0;
-}
+/* download button */
 
-nav ul li a {
-  padding: 0 5px;
-  font-weight: bold;
-}
-
-nav ul li a:visited {
-  color: #09c;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Sign up button */
-
-a.signup_button {
+a.download_button {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -93,101 +91,44 @@ a.signup_button {
   padding: 20px;
 }
 
-/* Round corners */
-
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-}
+/*- navigation --------------------------- */
 
 
+    nav {
+      background:#F4F4F4;
+      font-size:123%;
+      line-height:normal;
+      border-bottom:2px solid #24618E;
+      white-space: nowrap; 
 
-footer {
-  text-align: center;
-  margin-top: 10px;
-  width: 710px;
+     }
+
+nav {
   margin-left: auto;
   margin-right: auto;
 }
 
-footer nav {
-  float: none;
-}
+   nav ul {
+	margin:5px;
+	padding:10px 0px 0 50px;
+	list-style:none;
+      }
+    nav li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
 
-/* User show page */
-
-table.profile {
-  width: 100%;
-  margin-bottom: 0;
-}
-
-td.main {
-  width: 70%;
-  padding: 1em;
-}
-
-td.sidebar {
-  width: 30%;
-  padding: 1em;
-  vertical-align: top;
-  background: #ffc;
-}
-
-.profile img.gravatar {
-  border: 1px solid #999;
-  margin-bottom: -15px;
-}
-
-div.field, div.actions {
-  margin-bottom: 10px;
-}
-
-.field_with_errors {
-  margin-top: 10px;
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-.field_with_errors label {
-  color: #fff;
-}
-
-#error_explanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#error_explanation h2 {
-  text-align: left;
+nav ul li a {
+  padding: 0 60px;
   font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
 }
 
-#error_explanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
+nav ul li a:visited {
+  color: black;
 }
 
-#error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-ul.users {
-  margin-top: 1em;
-}
-
-.users li {
-  list-style: none;
-}

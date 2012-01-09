@@ -1,7 +1,18 @@
 class PagesController < ApplicationController
-
   def home
     @title = "Home"
+  end
+
+  def news
+    @title = "News"
+  end
+
+  def enquiry
+    @title = "Enquiry"
+  end
+
+  def submit
+    @title = "Submit"
   end
 
   def contact
@@ -12,18 +23,8 @@ class PagesController < ApplicationController
     @title = "About"
   end
 
-  def help
-    @title = "Help"
+  def survey
+    @title = "Survey"
   end
 
-  def create
-    @user = User.new(params[:user])
-    if @user.save
-      flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
-    else
-      @title = "Sign up"
-      render 'new'
-    end
-  end
 end

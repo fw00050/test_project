@@ -263,3 +263,28 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}
 .clear {clear:both;}
+
+
+div.article{
+    background: #DCDCE9;
+    margin-bottom: 10px;
+}
+
+div.content{
+    float: left; 
+    margin: 10px;
+}
+
+div.image{
+    float: left;
+    margin: 10px;
+}
+
+div.title{
+    font-size: 14px;
+    color: blue;
+}
+
+div.short{
+    font-size: 12px;
+}

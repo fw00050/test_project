@@ -1,26 +1,29 @@
-SampleApp::Application.routes.draw do
-  get "sessions/new"
+RailsApp::Application.routes.draw do
+  resources :articles
 
-  resources :users
-  resources :sessions, :only => [:new, :create, :destroy]
-
-  match '/signup',  :to => 'users#new'
-
-  
-  match '/signup',  :to => 'users#new'
-  match '/signin',  :to => 'sessions#new'
-  match '/signout', :to => 'sessions#destroy'
+  resources :records
+  match '/news', :to => 'news#index'
+  match '/admin', :to => 'admin#index'  
+  match '/enquiry',   :to => 'pages#enquiry'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
-  match '/help',    :to => 'pages#help'
-  match '/', :to => 'pages#home'
+  match '/survey',   :to => 'pages#survey'
 
   root :to => 'pages#home'
 
   get "pages/home"
 
+  get "pages/enquiry"
+
   get "pages/contact"
+
   get "pages/about"
+
+  get "pages/survey"
+
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  # root :to => "welcome#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

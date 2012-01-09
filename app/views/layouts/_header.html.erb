@@ -1,20 +1,15 @@
 <header>
-  <%= link_to logo, root_path %>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <% if signed_in? %>
-      <li><%= link_to "Users", users_path %></li>
-      <li><%= link_to "Profile", current_user %></li>
-      <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-      <% end %>
-      <li><%= link_to "Help", help_path %></li>
-      <% if signed_in? %>
-      <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
-      <% else %>
-      <li><%= link_to "Sign in", signin_path %></li>
-      <% end %>
-    </ul>
-  </nav>
+  <%= image_tag("tag.jpg", :alt => "Sample App", :class => "round") %>
+   <nav class="round">
+          <ul>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "News", news_path %></li>
+            <li><%= link_to "Enquiry", enquiry_path %></li>
+            <li><%= link_to "Submit", new_record_path %></li>
+            <li><%= link_to "Survey", survey_path %></li>
+          </ul>
+     </nav>
 </header>
+
+
 
